@@ -9,7 +9,7 @@
     [manualBreadcrumbs]="false"
     [actions]="(actions$ | async) ?? []"
   >
-    <div id="iam_role_search_criteria" [formGroup]="searchCriteriaForm" class="flex flex-wrap gap-4 row-gap-3">
+    <div id="iam_role_search_criteria" [formGroup]="searchCriteriaForm" class="flex flex-wrap gap-3">
       @let providers = provider$ | async;
       @if (providers) {
         <p-floatlabel variant="on" class="min-w-min w-full w-11rem">
